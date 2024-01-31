@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TMDB</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- heder start -->
+    <header class="header">
+      <nav>
+        <div class="container">
+          <div class="header-home">
+            <div class="header-wrapper">
+              <img
+                class="header-img"
+                src="./img/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
+                alt=""
+              />
+
+              <button class="header-cinema-wrapper">
+                <a class="header-cinema" href="#"><b>Филмиы</b></a>
+              </button>
+
+              <button class="header-Сериалы-wrapper">
+                <a class="header-Сериалы" href="#"><b>Сериалы</b></a>
+              </button>
+
+              <button class="">
+                <a class="header-Люди" href="#"><b>Люди</b></a>
+              </button>
+
+              <button>
+                <a class="header-a" href="#"><b>Ещё</b></a>
+              </button>
+            </div>
+
+            <div class="header-wrapper2">
+              <a href="#"><i class="fa-solid fa-plus header-plus"></i></a>
+
+              <button>
+                <a class="header-lang" href="#"><b>Ru</b></a>
+              </button>
+
+              <button>
+                <a class="header-enter" href="#"><b>Войти</b></a>
+              </button>
+
+              <button class="header-TMDV">
+                <a href="#"><b>Присоединиться к TMDB</b></a>
+              </button>
+              <i class="fa-solid fa-bars header-icon-bars"></i>
+              <i class="fa-regular fa-circle-user icon-user"></i>
+
+              <a href="#"
+                ><i class="fa-solid fa-magnifying-glass header-serch"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+          <h3 class="heding1">Популярные фильмы</h3>
+          <div class="main-wrapper">
+            <div class="aside-wrapper">
+              <div class="aside-home">
+                <button class="cartirovat">
+                  <b>Сортировать</b>
+                  <i class="fa-solid fa-chevron-right icon-right"></i>
+                </button>
+                <div class="main-filtirwrapper">
+                  <b class="filtr">Фильтры</b>
+                  <i class="fa-solid fa-chevron-right icon-right"></i>
+                  <hr class="main-filtr-cut" />
+                  <p class="aside-pokszit">Показать мне</p>
+                  <input class="aside-radio-all" type="radio" name="" id="" />
+                  <label for="">Все</label>
+                  <br />
+                  <input type="radio" />
+                  <label for="">Фильмы, которые я не видел </label>
+                  <br />
+                  <input type="radio" />
+                  <label for=""> Просмотренные фильмы</label>
+                  <hr />
+                  <p>Даты выхода</p>
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Искать все релизы?</label> <br />
+                  <label for="data">от</label>
+                  <input class="aside-date" type="date" name="" id="" />
+                  <br />
+                  <label for="data">до</label>
+                  <input type="date" name="" id="" />
+                  <hr />
+                  <p>Жанры</p>
+                  <div class="aside-janri-wrapper">
+                    <a class="aside-janri" href="#">боевик</a>
+                    <a class="aside-janri" href="#">вестерн</a>
+                  </div>
+                  <div class="aside-janri-wrapper">
+                    <a class="aside-janri" href="#">военный</a>
+                    <a class="aside-janri" href="#">детектив</a>
+                  </div>
+                  <div class="aside-janri-wrapper">
+                    <a class="aside-janri" href="#">документальный </a>
+                    <a class="aside-janri" href="#">драма</a>
+                  </div>
+                  <div class="aside-janri-wrapper">
+                    <a class="aside-janri" href="#">история</a>
+                    <a class="aside-janri" href="#">комедия</a>
+                  </div>
+                  <div class="aside-janri-wrapper">
+                    <a class="aside-janri" href="#">криминал</a>
+                    <a class="aside-janri" href="#">мелодрама</a>
+                  </div>
+                  <div class="aside-janri-wrapper">
+                    <a class="aside-janri" href="#">музыка</a>
+                    <a class="aside-janri" href="#">мультфильм</a>
+                  </div>
+                  <div class="aside-janri-wrapper">
+                    <a class="aside-janri" href="#">приключения</a>
+                    <a class="aside-janri" href="#">семейный</a>
+                  </div>
+                  <div class="aside-janri-wrapper">
+                    <a class="aside-janri" href="#">телевизионный фильм</a>
+                  </div>
+                  <div class="aside-janri-wrapper">
+                    <a class="aside-janri" href="#">триллер</a>
+                    <a class="aside-janri" href="#">ужасы</a>
+                  </div>
+                  <div class="aside-janri-wrapper">
+                    <a class="aside-janri" href="#">фантастика</a>
+                    <a class="aside-janri" href="#">фэнтези</a>
+                  </div>
+                  <hr />
+                  <p>Сертификация</p>
+                  <hr />
+                  <p>Язык</p>
+                  <button class="aside-lang-button">
+                    Ничего не выбрано
+                    <i class="fa-solid fa-caret-down aside-caret"></i>
+                  </button>
+                  <hr />
+                  <p>Пользовательский Рейтинг</p>
+                  <hr />
+                  <p>
+                    Минимальное количество <br />
+                    голосов пользователей
+                  </p>
+                  <hr />
+                  <p>Длительность</p>
+                  <hr />
+                  <p>Ключевые слова</p>
+                  <input
+                    class="aside-search"
+                    type="search"
+                    placeholder="фидтроват по Ключевым с..."
+                  />
+                </div>
+                <button class="aside-search-all">Поиск</button>
+              </div>
+            </div>
+
+            <div class="aside2-wrapper">
+              <div class="aside-img-box">
+                <img class="aside2-img" src="./img/main-img1.jpg" alt="" />
+                <div class="aside2-box">
+                  <p class="aside2-text">
+                    <b>Лукавый</b> <br />
+                    26 окт 2023
+                  </p>
+                </div>
+              </div>
+
+              <div class="aside-img-box">
+                <img class="aside2-img" src="./img/main-img2.jpg" alt="" />
+                <div class="aside2-box">
+                  <p class="aside2-text">
+                    <b>Лукавый</b> <br />
+                    26 окт 2023
+                  </p>
+                </div>
+              </div>
+
+              <div class="aside-img-box">
+                <img class="aside2-img" src="./img/main-img3.jpg" alt="" />
+                <div class="aside2-box">
+                  <p class="aside2-text">
+                    <b>Лукавый</b> <br />
+                    26 окт 2023
+                  </p>
+                </div>
+              </div>
+
+              <div class="aside-img-box">
+                <img class="aside2-img" src="./img/main-img4.jpg" alt="" />
+                <div class="aside2-box">
+                  <p class="aside2-text">
+                    <b>Лукавый</b> <br />
+                    26 окт 2023
+                  </p>
+                </div>
+              </div>
+
+              <div class="aside-img-box">
+                <img class="aside2-img" src="./img/main-img5.jpg" alt="" />
+                <div class="aside2-box">
+                  <p class="aside2-text">
+                    <b>Лукавый</b> <br />
+                    26 окт 2023
+                  </p>
+                </div>
+              </div>
+
+              <div class="aside-img-box">
+                <img class="aside2-img" src="./img/main-img6.jpg" alt="" />
+                <div class="aside2-box">
+                  <p class="aside2-text">
+                    <b>Лукавый</b> <br />
+                    26 окт 2023
+                  </p>
+                </div>
+              </div>
+
+              <div class="aside-img-box">
+                <img class="aside2-img" src="./img/main-img7.jpg" alt="" />
+                <div class="aside2-box">
+                  <p class="aside2-text">
+                    <b>Лукавый</b> <br />
+                    26 окт 2023
+                  </p>
+                </div>
+              </div>
+
+              <div class="aside-img-box">
+                <img class="aside2-img" src="./img/main-img8.jpg" alt="" />
+                <div class="aside2-box">
+                  <p class="aside2-text">
+                    <b>Лукавый</b> <br />
+                    26 окт 2023
+                  </p>
+                </div>
+              </div>
+
+              <div class="aside-img-box">
+                <img class="aside2-img" src="./img/main-img9.jpg" alt="" />
+                <div class="aside2-box">
+                  <p class="aside2-text">
+                    <b>Лукавый</b> <br />
+                    26 окт 2023
+                  </p>
+                </div>
+              </div>
+
+              <div class="aside-img-box">
+                <img class="aside2-img" src="./img/main-img10.jpg" alt="" />
+                <div class="aside2-box">
+                  <p class="aside2-text">
+                    <b>Лукавый</b> <br />
+                    26 окт 2023
+                  </p>
+                </div>
+              </div>
+
+              <div class="aside-img-box">
+                <img class="aside2-img" src="./img/main-img11.jpg" alt="" />
+                <div class="aside2-box">
+                  <p class="aside2-text">
+                    <b>Лукавый</b> <br />
+                    26 окт 2023
+                  </p>
+                </div>
+              </div>
+
+              <div class="aside-img-box">
+                <img class="aside2-img" src="./img/main-img12.jpg" alt="" />
+                <div class="aside2-box">
+                  <p class="aside2-text">
+                    <b>Лукавый</b> <br />
+                    26 окт 2023
+                  </p>
+                </div>
+              </div>
+
+              <div class="aside-img-box">
+                <img class="aside2-img" src="./img/main-img13.jpg" alt="" />
+                <div class="aside2-box">
+                  <p class="aside2-text">
+                    <b>Лукавый</b> <br />
+                    26 окт 2023
+                  </p>
+                </div>
+              </div>
+
+              <div class="aside-img-box">
+                <img class="aside2-img" src="./img/main-img14.jpg" alt="" />
+                <div class="aside2-box">
+                  <p class="aside2-text">
+                    <b>Лукавый</b> <br />
+                    26 окт 2023
+                  </p>
+                </div>
+              </div>
+
+              <div class="aside-img-box">
+                <img class="aside2-img" src="./img/main-img15.jpg" alt="" />
+                <div class="aside2-box">
+                  <p class="aside2-text">
+                    <b>Лукавый</b> <br />
+                    26 окт 2023
+                  </p>
+                </div>
+              </div>
+
+              <div class="aside-img-box">
+                <img class="aside2-img" src="./img/main-img15.jpg" alt="" />
+                <div class="aside2-box">
+                  <p class="aside2-text">
+                    <b>Лукавый</b> <br />
+                    26 окт 2023
+                  </p>
+                </div>
+              </div>
+
+              <div class="aside-run-wrapper">
+                <div class="container">
+                  <button class="aside-run">Загрузить ещё</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-home">
+      <div class="container">
+        <div class="footer-boxs">
+          <div class="footer-box-wrapper">
+            <img
+              class="footer-box-img"
+              src="./img/footer-img.svg"
+              alt="bu yerda rasm bor"
+            />
+            <button class="footer-box-button">
+              <b>ВСТУПИТЬ В СООБЩЕСТВО</b>
+            </button>
+          </div>
+          <div class="footer-box2-wrapper">
+            <ul>
+              <h3 class="footer-title">ГЛАВНОЕ</h3>
+              <li>О TMDB</li>
+              <li>Связаться с нами</li>
+              <li>Форумы поддержки</li>
+              <li>API</li>
+              <li>Статус системы</li>
+            </ul>
+            <ul>
+              <h3 class="footer-title">УЧАСТВУЙТЕ</h3>
+              <li>Библия редакторов</li>
+              <li>Добавить новый фильм</li>
+              <li>Добавить новый сериал</li>
+            </ul>
+            <ul>
+              <h3 class="footer-title">СООБЩЕСТВО</h3>
+              <li>Руководства</li>
+              <li>Обсуждения</li>
+              <li>Доска почёта</li>
+            </ul>
+            <ul>
+              <h3 class="footer-title">О ПРАВЕ</h3>
+              <li>Условия использования</li>
+              <li>API Правила использования</li>
+              <li>Политика конфиденциальности</li>
+              <li>DMCA Policy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
